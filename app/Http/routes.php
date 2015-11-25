@@ -16,4 +16,4 @@ Route::get('/', function () {
 });
 Route::resource('about', 'AboutController', ['only'=>'index']);
 Route::resource('contacts', 'ContactController', ['only'=>'index']);
-//Route::get('about', 'AboutController@index');
+Route::resource('services', 'ServiceController', ['only'=>'index']);
