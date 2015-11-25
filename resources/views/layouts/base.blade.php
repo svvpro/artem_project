@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    @yield('meta')
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Simple site</title>
 
@@ -23,13 +24,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <ul>
-            @foreach($menu as $item)
-                <a href="/{{ $item->url }}">
-                    <li>{{ $item->name }}</li>
-                </a>
-            @endforeach
-            </ul>
+            @include('partials.navigation')
         </div>
     </div>
     <div class="row">
