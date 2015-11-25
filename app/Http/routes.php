@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('about', 'AboutController', ['only'=>'index']);
+Route::resource('contacts', 'ContactController', ['only'=>'index']);
 //Route::get('about', 'AboutController@index');

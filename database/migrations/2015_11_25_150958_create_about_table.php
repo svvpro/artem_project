@@ -12,10 +12,8 @@ class CreateAboutTable extends Migration
      */
     public function up()
     {
-        Schema::create('about', function (Blueprint $table) {
+        Schema::create('abouts', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('meta_key');
-            $table->string('meta_desc');
             $table->text('description');
             $table->timestamps();
         });
@@ -28,6 +26,6 @@ class CreateAboutTable extends Migration
      */
     public function down()
     {
-        Schema::drop('about');
+        Schema::drop('abouts');
     }
 }

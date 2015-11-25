@@ -8,11 +8,11 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class AboutController extends Controller
+class AboutController extends BaseController
 {
     public function index()
     {
-        $about = About::first();
-        return view('pages.about.index', compact('about'));
+        $this->data['about'] = About::first();
+        return view('pages.about.index', $this->data);
     }
 }

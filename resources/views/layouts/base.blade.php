@@ -23,6 +23,17 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
+            <ul>
+            @foreach($menu as $item)
+                <a href="/{{ $item->url }}">
+                    <li>{{ $item->name }}</li>
+                </a>
+            @endforeach
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
             @yield('content')
         </div>
     </div>
