@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6e529683917e586216def402b34db9b7",
-    "content-hash": "debfdab8ebfd38cf55757e249160fcf2",
+    "hash": "fdb76eaa68fd544fef860d8e0b606d5e",
+    "content-hash": "18d75bd66bfd84d461269166b0086be2",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -1663,6 +1663,55 @@
                 "shell"
             ],
             "time": "2015-11-12 16:18:56"
+        },
+        {
+            "name": "sleeping-owl/admin",
+            "version": "dev-development",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sleeping-owl/admin.git",
+                "reference": "d23132623e503c053f3d8c5094c5941c1e6a1518"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sleeping-owl/admin/zipball/d23132623e503c053f3d8c5094c5941c1e6a1518",
+                "reference": "d23132623e503c053f3d8c5094c5941c1e6a1518",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "~2.3",
+                "illuminate/support": "5.*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "3.*",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "SleepingOwl\\Admin": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sleeping Owl",
+                    "email": "owl.sleeping@yahoo.com"
+                }
+            ],
+            "description": "Aministrative interface builder for Laravel.",
+            "homepage": "http://sleeping-owl.github.io",
+            "keywords": [
+                "admin",
+                "administrator",
+                "crud",
+                "laravel"
+            ],
+            "time": "2015-09-28 21:42:10"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3710,7 +3759,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "doctrine/dbal": 20
+        "doctrine/dbal": 20,
+        "sleeping-owl/admin": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
