@@ -20,9 +20,14 @@
     <![endif]-->
 </head>
 <body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            @yield('content')
+        </div>
+    </div>
 
-@yield('content')
-
+</div>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
 {!! Html::script('bower_components/jquery/dist/jquery.js') !!}
